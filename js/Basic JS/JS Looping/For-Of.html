@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Of</title>
+</head>
+<body>
+<script>
+
+    /*
+    === FOR OF ===
+    - For of purpose to iterate iterable object such as array, string, and others.
+    - For of cannot use to iterate object
+    */
+
+   // For of Array
+    const names = ["Rizky", "Hertama", "her"];
+    for(const name of names){
+        document.writeln(`<p>${name}</p>`);
+    }
+
+    // For of String
+    const fullName = "Rizky Hertama her";
+    for(const character of fullName){
+        document.writeln(`<p>${character}</p>`);
+    }
+
+
+    // Result will error
+    const person = {
+        firstName: "Rizky",
+        lastName: "her"
+    };
+    for(const name of person){
+        document.writeln(`<p>${name}</p>`);
+    }
+
+</script>
+</body>
+</html>

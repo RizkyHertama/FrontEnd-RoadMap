@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Logical & Comparison Operators</h1>
+    <p>Student Grade Score Checker</p>
+    <input type="text" id="input"  placeholder="Input your score here..." onkeyup="if(event.keyCode===13){Mybutton.click()}" >
+    <button type="button" onclick="checkScore()" id="Mybutton">Submit</button>
+    
+    <p>Grade result :  <p id="Result"></p> </p>
+
+    <script>
+//Function for trigger click enter for submit
+searchInput.onkeyup = function (e) {
+    if (e.key === 'Enter') {
+        searchBtn.click();
+    }
+}
+
+
+    function checkScore(){
+        var score = Number(document.getElementById("input").value);
+        if(isNaN(score)){
+           alert("Input must a Number!");
+        }
+        else if(score >= 85 && score <= 100){
+           document.getElementById("Result").innerHTML = "A"
+        }
+        else if(score >= 70 && score < 85){
+           document.getElementById("Result").innerHTML = "B"
+        }
+        else if(score >= 65 && score < 70){
+           document.getElementById("Result").innerHTML = "C"
+        }
+        else if(score >=50 && score < 65){
+           document.getElementById("Result").innerHTML = "D"
+        }
+        else if(score < 50){
+           document.getElementById("Result").innerHTML = "F"
+        }
+        else{
+            alert("Input Your grade Score from 0 - 100")
+        }
+    }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Undefined</title>
+</head>
+<body>
+<script>
+    /*
+    === Undefined ===
+    - if a variable not yet add a value, so we can called undefined.
+    - undefined different with null.
+    */
+    let name;
+
+    // variable not defined
+    if (name === undefined) {
+        console.info("UNDEFINED");
+    } else {
+        console.info("DEFINED");
+    }
+
+    // array defined
+    const names = ["Rizky", "Hertama"];
+    if (names[2] === undefined) {
+        console.info("ARRAY UNDEFINED");
+    } else {
+        console.info("ARRAY DEFINED");
+    }
+
+    const person = {};
+    if (person.name === undefined) {
+        console.info("OBJECT UNDEFINED");
+    } else {
+        console.info("OBJECT DEFINED");
+    }
+
+</script>
+</body>
+</html>

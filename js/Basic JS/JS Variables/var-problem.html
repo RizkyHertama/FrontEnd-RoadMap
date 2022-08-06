@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Masalah Variable var</title>
+</head>
+<body>
+<script>
+
+    /*
+    === var problem ===
+    - var dont have block scope
+    - recomendation using let
+    */
+
+    // global scope
+    var i = 20;
+
+    for (var i = 0; i < 10; i++) {
+        // local scope
+        console.info(`Local ${i}`);
+    }
+
+    console.info(`Global ${i}`);
+
+    let j = 20;
+    for (let j = 0; j < 10; j++) {
+        // local scope
+        console.info(`Local ${j}`);
+    }
+
+    console.info(`Global ${j}`);
+
+</script>
+</body>
+</html>

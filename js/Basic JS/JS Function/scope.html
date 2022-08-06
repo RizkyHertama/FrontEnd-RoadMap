@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scope</title>
+</head>
+<body>
+<script>
+    /*
+    === Scope ===
+    - scope is area access data
+    - scope has 2 types : global scope and local scope.
+    - Every we created a function, then we will create local scope for that function.
+    - Data in global scope can access from local scope, but data in local scope only can acces from local scope.
+    -
+    */ 
+
+
+    // global scope
+    let counter = 0;
+
+    // global scope
+    function hitMe(){
+        // local scope hitMe
+        counter++;
+    }
+
+    // global scope
+    function other(){
+        // local scope other
+    }
+
+    hitMe();
+    hitMe();
+
+    console.info(counter);
+
+    function first(){
+        // local scope first
+        let firstVariable = "First";
+
+        function firstNested(){
+            console.info(firstVariable);
+            const firstNestedVariable = "First Nested";
+        }
+
+        firstNested();
+        console.info(firstNestedVariable);
+    }
+
+    function second(){
+        // local scope second
+        let secondVariable = "Second";
+        // console.info(firstVariable); // ERROR
+    }
+
+    first();
+    second();
+
+    // global scope
+    // console.info(firstVariable); // ERROR
+    // console.info(secondVariable); // ERROR
+
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator In</title>
+</head>
+<body>
+<script>
+    /* 
+    === In Operator ===
+    - in operator have a purpose to checking is there any property in a object?
+    - if exist then true, else false.
+    - in opeator also can checking index in array.
+    */ 
+
+    const person = {
+        firstName: "Eko",
+        lastName: "Khannedy"
+    };
+
+    if ("firstName" in person) {
+        alert(`Hello ${person.firstName}`);
+    } else {
+        alert("Hello");
+    }
+
+    const student = {
+        firstName: "Eko",
+        middleName: undefined,
+        lastName: "Khannedy"
+    }
+
+    if ("middleName" in student) {
+        alert(`Hello ${student.middleName}`);
+    } else {
+        alert("Hello Student");
+    }
+
+    const names = [null, "Kurniawan", null];
+    const result = 0 in names;
+    document.writeln(`<p>${result}</p>`);
+
+</script>
+</body>
+</html>

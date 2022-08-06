@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Arithmatics Operators</h1>
+    <p>
+        Enter number 1
+        <input type="text" id="input1" style="width: 40px;">
+        
+    </p>
+    <p>
+        Enter number 2
+        <input type="text" id="input2" style="width: 40px;">   
+    </p>
+
+    <button type="button" id="button" onclick="SumResult()">+</button>
+    <button type="button" id="button" onclick="SubstractionResult()">-</button>
+    <button type="button" id="button" onclick="MultiplicationResult()">*</button>
+    <button type="button" id="button" onclick="DivisionResult()">/</button>
+    <button type="button" id="button" onclick="ModuloResult()">%</button>
+    <button type="button" id="button" onclick="ExponenResult()">**</button>
+    <br>
+    <br>
+    
+    <span id="result"></span>
+
+    <br>
+    <br>
+
+    <p>
+        Enter number 
+        <input type="text" id="input" style="width: 40px;">   
+    </p>
+
+
+    <button type="button" id="button" onclick="IncrementResult()">++</button>
+    <button type="button" id="button" onclick="DecrementResult()">--</button>
+    <br>
+    <br>
+    <span id="Total"></span>
+
+
+<script>
+function SumResult() {
+    var notification = ("Please Input the numbers");
+
+    var num1 = Number(document.getElementById("input1").value);
+    var num2 = Number(document.getElementById("input2").value);
+    var Result = document.getElementById("result");
+
+    if(num1 != false || num2 != false){
+    if(Result.textContent === undefined) {
+       Result = "Calculation Result :  " + String(num1 + num2) + ".";
+    }
+    else { 
+       Result.innerText = "Calculation Result :  " + String(num1 + num2) + ".";
+    }
+    }
+
+    else{
+    alert(notification);
+    }
+    
+}
+
+function SubstractionResult() {
+    var notification = ("Please Input the numbers");
+
+    var num1 = Number(document.getElementById("input1").value);
+    var num2 = Number(document.getElementById("input2").value);
+    var Result = document.getElementById("result");
+
+    if(num1 != false || num2 != false){
+    if(Result.textContent === undefined) {
+       Result = "Calculation Result :  " + String(num1 - num2) + ".";
+    }
+    else { 
+       Result.innerText = "Calculation Result :  " + String(num1 - num2) + ".";
+    }
+    }
+    
+    else{
+    alert(notification);
+    } 
+}
+
+function MultiplicationResult() {
+    var notification = ("Please Input the numbers");
+
+    var num1 = Number(document.getElementById("input1").value);
+    var num2 = Number(document.getElementById("input2").value);
+    var Result = document.getElementById("result");
+
+    if(num1 != false || num2 != false){
+    if(Result.textContent === undefined) {
+       Result = "Calculation Result :  " + String(num1 * num2) + ".";
+    }
+    else { 
+       Result.innerText = "Calculation Result :  " + String(num1 * num2) + ".";
+    }
+    }
+    
+    else{
+    alert(notification);
+    } 
+}
+
+function DivisionResult(){
+    var notification = "Please input the numbers!";
+
+    var num1 = Number(document.getElementById("input1").value);
+    var num2 = Number(document.getElementById("input2").value);
+
+    var Result = document.getElementById("result");
+
+    if(num1 != false || num2 != false){
+    if(Result.textContent === undefined) {
+       Result = "Calculation Result :  " + String(num1 / num2) + ".";
+    }
+    else { 
+       Result.innerText = "Calculation Result :  " + String(num1 / num2) + ".";
+    }
+    }
+    
+    else{
+    alert(notification);
+    } 
+
+}
+
+function ModuloResult(){
+    var notification = "Please input the numbers!";
+
+    var num1 = Number(document.getElementById("input1").value);
+    var num2 = Number(document.getElementById("input2").value);
+
+    var Result = document.getElementById("result");
+
+    if(num1 != false || num2 != false){
+    if(Result.textContent === undefined) {
+       Result = "Calculation Result :  " + String(num1 % num2) + ".";
+    }
+    else { 
+       Result.innerText = "Calculation Result :  " + String(num1 % num2) + ".";
+    }
+    }
+    
+    else{
+    alert(notification);
+    } 
+
+}
+
+function ExponenResult(){
+    var notification = "Please input the numbers!";
+
+    var num1 = Number(document.getElementById("input1").value);
+    var num2 = Number(document.getElementById("input2").value);
+
+    var Result = document.getElementById("result");
+
+    if(num1 != false || num2 != false){
+    if(Result.textContent === undefined) {
+       Result = "Calculation Result :  " + String(num1 ** num2) + ".";
+    }
+    else { 
+       Result.innerText = "Calculation Result :  " + String(num1 ** num2) + ".";
+    }
+    }
+    
+    else{
+    alert(notification);
+    } 
+
+}
+
+function IncrementResult() {
+    var notification = ("Please Input the numbers");
+
+    var num = Number(document.getElementById("input").value);
+    var Result = document.getElementById("Total");
+    num++;
+
+    if(num != false){
+    if(Result.textContent === undefined) {
+       Result = "Increment Result :  " + (num) + ".";
+    }
+    else { 
+       Result.innerText = "Increment Result :  " + (num) + ".";
+    }
+    }
+
+    else{
+    alert(notification);
+    }
+    
+}
+
+function DecrementResult() {
+    var notification = ("Please Input the numbers");
+
+    var num = Number(document.getElementById("input").value);
+    var Result = document.getElementById("Total");
+    num--;
+
+    if(num != false){
+    if(Result.textContent === undefined) {
+       Result = "Increment Result :  " + (num) + ".";
+    }
+    else { 
+       Result.innerText = "Increment Result :  " + (num) + ".";
+    }
+    }
+
+    else{
+    alert(notification);
+    }
+    
+}
+
+</script>
+
+</body>
+</html>

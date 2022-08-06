@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bitwise Operator</h1>
+    <p style="font-weight: bold; background-color: gray;">AND & Operator</p>
+    <p id="example1"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">OR | Operator</p>
+    <p id="example2"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">XOR ^ Operator</p>
+    <p id="example3"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">NOT ~ Operator</p>
+    <p id="example4"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">Left Shift << Operator</p>
+    <p id="example5"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">Right Shift >> Operator</p>
+    <p id="example6"> </p>
+
+
+    <script>
+
+
+        /*
+        ====== & Operator ======
+
+        12 = 01100
+        25 = 11001
+
+        Bitwise AND Operation of 12 and 25
+
+        00001100
+      & 00011001
+        ---------
+        00001000  = 8 (In decimal)
+        */
+        let a = 12;
+        let b = 25;
+        let result = a & b;
+        document.getElementById("example1").innerHTML = result;
+
+
+        /*
+          ====== | Operator ======
+
+        12 = 01100
+        25 = 11001
+
+        Bitwise OR Operation of 12 and 25
+
+        00001100
+      | 00011001
+        --------
+        00011101  = 29 (In decimal)
+        */
+        let result2 = a | b;
+        document.getElementById("example2").innerHTML = result2;
+
+        /*
+          ====== ^ Operator ======
+        12 = 01100
+        25 = 11001
+
+        Bitwise XOR Operation of 12 and 25
+
+        00001100
+      ^ 00011001
+        --------
+        00010101  = 21 (In decimal)
+        */
+        let result3 = a ^ b;
+        document.getElementById("example3").innerHTML = result3;
+
+        /*
+          ====== ~ Operator ======
+
+        12 = 00000000000000000000000000001100
+
+        Bitwise Not Operation of 12 
+
+         ~ 00000000000000000000000000001100
+        ---------------------------------
+        11111111111111111111111111110011  = -13(In decimal)
+        */
+        let c = 12;
+        result4 = ~c
+        document.getElementById("example4").innerHTML = result4;
+
+
+        /*
+          ====== << Operator ======
+          1 ( 00000000000000000000000000010000 )
+        */
+        let d = 8;
+        let  e = 1;
+
+        result5 = d << e;
+        document.getElementById("example5").innerHTML = result5;
+
+        /*
+          ====== >> Operator ======
+          1 ( 00000000000000000000000000010000 )
+        */
+        result6 = d >> e;
+        document.getElementById("example6").innerHTML = result6;
+    </script>
+
+        
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Nested function</title>
+</head>
+<body>
+<script>
+    /*
+    === Nested function ===
+    - Inner function only can access in the function location
+    */
+
+    function outer(){
+
+        function inner(){
+            console.info("Inner");
+        }
+
+        inner();
+        inner();
+
+    }
+
+    outer();
+    // inner(); //cannot acces inner in here
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Optional Chaining</title>
+</head>
+<body>
+<script>
+
+    /*
+    === OPTIONAL CHAINING ==
+    - Optional Chaining operator (?) is operator to safe us 
+    when we want access property in a object from nullish data.
+
+    */
+
+    // Error access example
+    // const person = {};
+    // const country = person.address.country;
+
+    const person = {
+        address: {
+            country : "Indonesia"
+        }
+    };
+
+    // optional chaining check
+    let country = person?.address?.country;
+
+    // if(person.address !== undefined && person.address !== null){
+    //     country = person.address.country;
+    // }
+
+    document.writeln(`success`);
+
+    document.writeln(`<p>${country}</p>`);
+
+    document.writeln(`success`);
+
+</script>
+</body>
+</html>

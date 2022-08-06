@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assigment Operator</h1>
+
+    <p style="font-weight: bold; background-color: gray;">The += Operator</p>
+    <p id="example1"> </p>
+    <p id="example2"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">The + operator concatenates (adds) strings.</p>
+    <p id="example3"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">The -= Operator</p>
+    <p id="example4"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">The *= Operator</p>
+    <p id="example5"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">The /= Operator</p>
+    <p id="example6"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">The %= Operator</p>
+    <p id="example7"> </p>
+
+    <p style="font-weight: bold; background-color: gray;">The **= Operator</p>
+    <p id="example8"> </p>
+
+
+
+<script>
+    //The += Operator
+    var x = 10;
+    x += 5;
+    document.getElementById("example1").innerHTML = x;
+
+    var car = "Mitsubishi";
+    car += " Pajero"
+    document.getElementById("example2").innerHTML = car;
+
+    //The + operator concatenates (adds) strings.
+    let text1 = "Rizky";
+    let text2 = "Hertama";
+    let text3 = text1 + " " + text2;
+    document.getElementById("example3").innerHTML = text3;
+
+    //The -= Operator
+    var a = 220;
+    a -= 300;
+    document.getElementById("example4").innerHTML = a;
+
+    //The *= Operator
+    var b = 30;
+    b *= 2;
+    document.getElementById("example5").innerHTML = b;
+
+    //The /= Operator
+    var c = 100;
+    c /= 2;
+    document.getElementById("example6").innerHTML = c;
+
+    //The %= Operator
+    var d = 10;
+    d %= 5;
+    document.getElementById("example7").innerHTML = d;
+
+    //The **= Operator
+    var e = 12;
+    e **= 2; 
+    document.getElementById("example8").innerHTML = e;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For In</title>
+</head>
+<body>
+<script>
+    /*
+    === FOR IN ===
+    - Puroses to iterate every data property in object or array index
+    - But, not recommended using for in for iterate array index
+    */
+    const person = {
+        firstName: "Rizky",
+        middleName: "Hertama",
+        lastName: "her"
+    };
+
+    // access object using for in
+    for(const property in person){
+        document.writeln(`<p>${property} : ${person[property]}</p>`);
+    }
+
+    // accsess array index using for in
+    const names = ["Rizky", "Hertama", "Her"];
+    for(const index in names){
+        document.writeln(`<p>${index} : ${names[index]}</p>`);
+    }
+
+</script>
+</body>
+</html>

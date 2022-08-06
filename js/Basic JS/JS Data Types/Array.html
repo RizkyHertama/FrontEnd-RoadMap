@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+
+        /*
+       === Array Operation ====
+       1. array.push(value) -> Add data to array
+       2. array.length      -> To get array length return in number
+       3. array[index]      -> Get index position data
+       4. array[index]=value-> Change index position data
+       5. delete array[index]-> Remove index position data, but index not moving
+       */
+
+        let arrayEmpty = [];
+        let arrayName = ["Rizky", "Hertama"];
+
+        //data will display in sequence start from index 0
+        const names = [];
+        
+        // array.push example
+        names.push("Revaldy");
+        names.push("indra", "suwardhana");
+        names.push("Budi", "Tono", "dewi");
+
+        //array.length example
+        console.info(names.length);
+
+        //array[index] example
+        console.info(names[2]);
+
+        //array[index]=value example
+        names[0] = "aldi";
+
+        //delete array[index] example
+        delete names[3];
+
+        //print array
+        console.table(names);
+    </script>
+</body>
+</html>

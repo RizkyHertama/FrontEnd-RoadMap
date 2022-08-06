@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        /*
+        === Object ===
+        - Object similliar with array.
+        - But, object use string data types.
+        - In object, index called attributes.
+        */
+
+        //property object
+        const person = {
+        "Full name" : "Rizky hertama",
+        address: "Indonesia",
+        age: 30
+        };
+
+        console.info(`Name : ${person["Full name"]}`);
+        console.info(`Address : ${person.address}`);
+        console.info(`Age : ${person.age}`);
+
+        console.table(person);
+
+        delete person["age"];
+
+        console.table(person);
+
+    </script>
+</body>
+</html>

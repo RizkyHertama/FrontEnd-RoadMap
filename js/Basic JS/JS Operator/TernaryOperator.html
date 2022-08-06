@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Ternary</title>
+</head>
+<body>
+<script>
+
+    const score = 90;
+    let say;
+
+    if (score >= 75) {
+        say = "Congratulation you passed the test!";
+    } else {
+        say = "Sorry, try again....";
+    }
+
+    document.writeln(`<p>${say}</p>`);
+
+    say = score >= 75 ? "Congratulation you passed the test!" : "Sorry, try again....";
+
+    document.writeln(`<p>${say}</p>`);
+
+</script>
+</body>
+</html>

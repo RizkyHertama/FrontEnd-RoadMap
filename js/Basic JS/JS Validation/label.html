@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label</title>
+</head>
+<body>
+<script>
+    /*
+    === label ===
+    - label is marker that we can use with break and continue
+    */
+
+    loopi: //label
+        for (let i = 0; i < 10; i++) {
+            loopj: //label
+                for (let j = 0; j < 100; j++) {
+                    if(j > 10){
+                        continue loopi;
+                    }
+                    console.info(`${i} - ${j}`);
+                }
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and Number Conversion</title>
+</head>
+<body>
+    <script>
+        //String and number
+            const value1 = parseInt("1"); //Conversion string to number
+            const value2 = 2;
+            const sum = value1 + value2;
+            document.writeln(sum);
+            document.writeln("</br>");
+
+            document.writeln(parseInt("2.2")); //result based on int 
+            document.writeln("</br>");
+
+            document.writeln(parseFloat("2.2")); //result based on float
+            document.writeln("</br>");
+
+            document.writeln(Number("1.1")); // Number will flexible
+            document.writeln("</br>");
+
+            const a = 1;
+            const b = 1;
+            const total = a.toString() + b.toString();
+            document.writeln(`<p>${total}</p>`);
+
+            document.writeln(`<p>${parseInt("1falsee")}</p>`)
+            document.writeln(`<p>${parseFloat("1.1eko")}</p>`)
+
+            document.writeln(`<p>${Number("1false")}</p>`)
+            document.writeln(`<p>${Number("1.1eko")}</p>`)
+            document.writeln(`<p>${Number("false")}</p>`) //NaN (not a number)
+
+            const first = Number("salah"); // NaN
+            const totalNumber = first + 100;
+            document.writeln(`<p>${totalNumber}</p>`);
+
+            document.writeln(`<p>${isNaN(first)}</p>`);
+            document.writeln(`<p>${isNaN(100)}</p>`);
+            document.writeln(`<p>${isNaN(NaN)}</p>`);
+    </script>
+
+</body>
+</html>

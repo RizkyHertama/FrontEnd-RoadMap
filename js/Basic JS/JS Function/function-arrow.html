@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Arrow</title>
+</head>
+<body>
+<script>
+
+    /*
+    === Arrow function ===
+    - Arrow function is alternative method when we want to create a function,
+    because arrow function is more simple than ordinary function.
+    - but, arrow function has limitation and cannot use in all situation.
+    - its called arrow function because use sign => (like arrow)
+
+    * Weakness using arrow function :
+    - dont has arguments object fitur.
+    - cannot use function generator.
+    - cannot access this.
+    - cannot access super
+
+    */
+
+
+    // const sayHello = (name) => {
+    //     const say = `Hello ${name}`;
+    //     console.info(say);
+    // }
+
+    // const sayHello = (name) => console.info(`Hello ${name}`);
+
+    const sayHello = name => console.info(`Hello ${name}`); // simple version
+
+    sayHello("Eko");
+
+    // const sum = (first, second) => {
+    //     return first + second;
+    // }
+
+    const sum = (first, second) => first + second;
+
+    console.info(sum(100, 100));
+
+    function giveMeName(callback){
+        callback("Eko");
+    }
+
+    // Anonymous Function
+    // giveMeName(function (name) {
+    //     console.info(`Hello ${name}`);
+    // })
+
+    // Arrow Function
+    giveMeName(name => console.info(`Hello ${name}`));
+
+</script>
+</body>
+</html>
